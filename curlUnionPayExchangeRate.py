@@ -15,12 +15,9 @@ if upToDate:
 while (startDateObj<=endDateObj):
 	startDateStr=startDateObj.strftime('%Y-%m-%d')
 	data['curDate']=startDateStr
-	#print startDateStr
 	response = requests.post(url, data=data)
-	#exchangeRate=response.content
-	#exchangeRate=json.dumps(exchangeRate.__dict__)
 	exchangeRate=json.loads(response.content)
-	print (startDateStr+" "+str(exchangeRate['exchangeRate']))
+	print (startDateStr+"\t"+str(exchangeRate['exchangeRate']))
 	startDateObj=startDateObj+datetime.timedelta(days=1)
 
 
