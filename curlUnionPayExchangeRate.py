@@ -8,7 +8,7 @@ data =  {'curDate':'', 'baseCurrency': '', 'transactionCurrency': ''}
 baseCurrency='HKD'
 transactionCurrency='EUR'
 upToDate=True
-startDateObj=datetime.datetime.strptime('2018-09-06', '%Y-%m-%d')
+startDateObj=datetime.datetime.strptime('2018-08-01', '%Y-%m-%d')
 endDateObj=datetime.datetime.strptime('2018-09-15','%Y-%m-%d')
 
 data['baseCurrency']=baseCurrency
